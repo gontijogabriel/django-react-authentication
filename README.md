@@ -23,7 +23,6 @@ Este é um projeto para praticar e aprender a implementar recursos de autentica�
 
 2. Siga as etapas de configuração no diretório `backend` (Django) e `frontend` (React) para configurar o ambiente de desenvolvimento.
 
-3. Execute o projeto e comece a trabalhar em cada etapa do progresso.
 
 ## Configuração do Ambiente
 
