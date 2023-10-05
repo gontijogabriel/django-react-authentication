@@ -4,5 +4,5 @@ from project.views import login, index
 urlpatterns = [
     path('', index, name='index'),
     path('login/', login, name='login'),
-    path('captcha', include('captcha.urls'))
+    path('captcha/', include('captcha.urls'))
 ]

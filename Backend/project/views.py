@@ -7,8 +7,14 @@ def index(request):
 
 def login(request):
     if request.method == "POST":
-        print(request.POST)
-        return HttpResponse('teste')
+        form = CaptchaForm(request.POST)
+
+        if form.is_valid():
+            print(request.POST)
+            return HttpResponse('dados preenchidos com sucesso')
+        else:
+            return render(request, 'login.html', {"form": form})
+    
     else:
         form = CaptchaForm()
         return render(request, 'login.html', {"form": form})

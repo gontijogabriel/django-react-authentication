@@ -19,6 +19,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CAPTCHA_CHALLENGE_FUNCT = 'project.my_captcha.captcha_challenge'
 
 # Application definition
 
