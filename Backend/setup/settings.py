@@ -19,8 +19,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CAPTCHA_CHALLENGE_FUNCT = 'project.my_captcha.captcha_challenge'
-
+#CAPTCHA_CHALLENGE_FUNCT = 'project.my_captcha.captcha_challenge'
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
+CAPTCHA_FONT_SIZE = 48  # Tamanho da fonte
+# CAPTCHA_LENGTH = 4
 # Application definition
 
 INSTALLED_APPS = [
